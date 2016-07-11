@@ -1,0 +1,14 @@
+language: c
+env:
+  global:
+    - LUAROCKS=2.3.0
+  matrix:
+    - LUA=lua5.3
+install:
+    - source .travis/setenv_lua.sh
+    - luarocks make
+script:
+    - genesiPassword --help
+    - genesiPassword -t 1 -l 12
+    - genesiPassword -t 2 -c 3 -l 10
+sudo: true
