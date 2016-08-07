@@ -12,7 +12,7 @@ see https://github.com/TiagoDanin/GenesiPassword/blob/master/LICENSE
 ]==]--
 
 local genesiPassword = {
-	version = '1.1',
+	version = '1.1.1',
 	name = 'GenesiPassword',
 	author = 'Tiago Danin - 2016',
 	license = 'GPL v3',

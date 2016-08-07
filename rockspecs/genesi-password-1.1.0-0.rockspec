@@ -1,5 +1,5 @@
 package = "genesi-password"
-version = "1.1-0"
+version = "1.1.0-0"
 
 source = {
 	url = "https://github.com/TiagoDanin/GenesiPassword/archive/1.1.0.tar.gz",

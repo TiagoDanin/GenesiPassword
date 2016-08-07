@@ -6,6 +6,7 @@ Written for Lua 5.3
 
 ## Install And Run
 Install: `$ luarocks install genesi-password`
+
 Run: `$ genesiPassword`
 
 ## Pages
