@@ -3,7 +3,7 @@ version = "1.1.1-0"
 
 source = {
 	url = "https://github.com/TiagoDanin/GenesiPassword/archive/1.1.1.tar.gz",
-	dir = "GenesiPassword-1.1.0"
+	dir = "GenesiPassword-1.1.1"
 }
 
 description = {
