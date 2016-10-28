@@ -25,11 +25,11 @@ end
 
 function genesiPassword.gen (input, tam, advan)
 	if not input then
-		if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: input is value nil') end
+		if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: input is value nil') end
 		return false
 	end
 	if not tam then
-		if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: tam is value nil') end
+		if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: tam is value nil') end
 		return false
 	end
 
@@ -59,11 +59,11 @@ function genesiPassword.gen (input, tam, advan)
 				number = true
 				text = true
 			else
-				if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: input > '.. v ..' is invalid!') end
+				if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: input > '.. v ..' is invalid!') end
 			end
 		end
 	else
-		if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: input is invalid!') end
+		if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: input is invalid!') end
 		return false
 	end
 
@@ -73,7 +73,7 @@ function genesiPassword.gen (input, tam, advan)
 		if tam:match('^[1234567890]*$') then
 			tam = math.abs(tam)
 		else
-			if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: tam not is number') end
+			if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: tam not is number') end
 			return false
 		end
 	else
@@ -127,18 +127,18 @@ end
 function genesiPassword.genesi (input, tam)
 
 	if not input then
-		if error_msg_genesiPassword then error('genesiPassword[genesi] >> ERRO: input is value nil') end
+		if error_msg_genesiPassword then error('genesiPassword[genesi] >> ERROR: input is value nil') end
 		return false
 	end
 	if not tam then
-		if error_msg_genesiPassword then error('genesiPassword[genesi] >> ERRO: tam is value nil') end
+		if error_msg_genesiPassword then error('genesiPassword[genesi] >> ERROR: tam is value nil') end
 		return false
 	end
 	if type(tam) ~= 'number' then
 		if tam:match('^[1234567890]*$') then
 			tam = math.abs(tam)
 		else
-			if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: tam not is number') end
+			if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: tam not is number') end
 			return false
 		end
 	else
@@ -153,18 +153,18 @@ end
 function genesiPassword.save (input, tam, dir, name, number)
 
 	if not input then
-		if error_msg_genesiPassword then error('genesiPassword[save] >> ERRO: input is value nil') end
+		if error_msg_genesiPassword then error('genesiPassword[save] >> ERROR: input is value nil') end
 		return false
 	end
 	if not tam then
-		if error_msg_genesiPassword then error('genesiPassword[save] >> ERRO: tam is value nil') end
+		if error_msg_genesiPassword then error('genesiPassword[save] >> ERROR: tam is value nil') end
 		return false
 	end
 	if type(tam) ~= 'number' then
 		if tam:match('^[1234567890]*$') then
 			tam = math.abs(tam)
 		else
-			if error_msg_genesiPassword then error('genesiPassword[gen] >> ERRO: tam not is number') end
+			if error_msg_genesiPassword then error('genesiPassword[gen] >> ERROR: tam not is number') end
 			return false
 		end
 	else
@@ -178,7 +178,7 @@ function genesiPassword.save (input, tam, dir, name, number)
 		if number:match('^[1234567890]*$') then
 			number = math.abs(number)
 		else
-			if error_msg_genesiPassword then error('genesiPassword[save] >> ERRO: number not is number') end
+			if error_msg_genesiPassword then error('genesiPassword[save] >> ERROR: number not is number') end
 			return false
 		end
 	elseif not number then
